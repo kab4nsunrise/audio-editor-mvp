@@ -1,0 +1,8 @@
+services:
+  audio-editor:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./uploads:/app/uploads
+    restart: unless-stopped
